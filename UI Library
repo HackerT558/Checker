@@ -2168,5 +2168,5 @@ do
 	end
 end
 
-print("dino was here :\)")
+print("Welcome to MoonShine HUB!")
 return library
