@@ -211,7 +211,7 @@ do
 	
 	-- new classes
 	
-	function library.new(title)
+	function library.new(title, gameName, HubVers)
 		local container = utility:Create("ScreenGui", {
 			Name = title,
 			Parent = game.CoreGui
