@@ -224,10 +224,6 @@ do
 				Image = "rbxassetid://7483479465",
 				ImageColor3 = themes.Background,
 			}, {
-				utility:Create("UICorner", {
-					CornerRadius = UDim.new(0, 4),
-				}),
-      {
 				utility:Create("ImageLabel", {
 					Name = "Glow",
 					BackgroundTransparency = 1,
@@ -238,7 +234,8 @@ do
 					ImageColor3 = themes.Glow,
 					ScaleType = Enum.ScaleType.Slice,
 					SliceCenter = Rect.new(24, 24, 276, 276)
-				}),
+				})
+			}, {
 				utility:Create("ImageLabel", {
 					Name = "Pages",
 					BackgroundTransparency = 1,
@@ -265,7 +262,8 @@ do
 							Padding = UDim.new(0, 10)
 						})
 					})
-				}),
+				})
+			}, {
 				utility:Create("ImageLabel", {
 					Name = "TopBar",
 					BackgroundTransparency = 1,
@@ -284,63 +282,66 @@ do
 						Position = UDim2.new(0, 10, 0.5, 0),
 						Size = UDim2.new(0, 54, 0, 54),
 						ZIndex = 3,
-					  Image = "rbxassetid://7460459256",
+						Image = "rbxassetid://7460459256",
 					}), {
-					utility:Create("TextLabel", { -- title
-						Name = "Title",
-						AnchorPoint = Vector2.new(0, 0.5),
-						BackgroundTransparency = 1,
-						Position = UDim2.new(0, 78, 0, 19),
-						Size = UDim2.new(0.67, -24, 0, 16),
-						ZIndex = 5,
-						Font = Enum.Font.GothamBold,
-						Text = title,
-						TextColor3 = themes.TextColor,
-						TextSize = 14,
-            TextScaled = true,
-						TextXAlignment = Enum.TextXAlignment.Left
-					}), {
-					utility:Create("TextLabel", { -- title
-						Name = "Version",
-						AnchorPoint = Vector2.new(0, 0.5),
-						BackgroundTransparency = 1,
-						Position = UDim2.new(0, 78, 0.5, 0),
-						Size = UDim2.new(0.67, -24, 0, 16),
-						ZIndex = 5,
-						Font = Enum.Font.GothamBold,
-						Text = title,
-						TextColor3 = themes.TextColor,
-						TextSize = 14,
-            TextScaled = true,
-						TextXAlignment = Enum.TextXAlignment.Left
-					}), {
-					utility:Create("TextLabel", { -- title
-						Name = "Game",
-						AnchorPoint = Vector2.new(0, 0.5),
-						BackgroundTransparency = 1,
-						Position = UDim2.new(0, 78, 1, 0),
-						Size = UDim2.new(0.67, -24, 0, 16),
-						ZIndex = 5,
-						Font = Enum.Font.GothamBold,
-						Text = title,
-						TextColor3 = Color3.fromRGB(159, 159, 159)
-						TextSize = 14,
-            TextScaled = true,
-						TextXAlignment = Enum.TextXAlignment.Left
-					}, {
-				  	utility:Create("UIGradient", { -- title
-						  Color = ColorSequence.new({
-              	ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 0, 0)),
-              	ColorSequenceKeypoint.new(0.145, Color3.fromRGB(255, 127, 0)),
-              	ColorSequenceKeypoint.new(0.288, Color3.fromRGB(255, 255, 0)),
-              	ColorSequenceKeypoint.new(0.429, Color3.fromRGB(0, 255, 0)),
-	              ColorSequenceKeypoint.new(0.571, Color3.fromRGB(0, 255, 255)),
-              	ColorSequenceKeypoint.new(0.715, Color3.fromRGB(0, 0, 255)),
-	              ColorSequenceKeypoint.new(0.857, Color3.fromRGB(255, 0, 255)),
-	              ColorSequenceKeypoint.new(1, Color3.fromRGB(255, 0, 0))
-               })
-            })
-					})
+						utility:Create("TextLabel", { -- title
+							Name = "Title",
+							AnchorPoint = Vector2.new(0, 0.5),
+							BackgroundTransparency = 1,
+							Position = UDim2.new(0, 78, 0, 19),
+							Size = UDim2.new(0.67, -24, 0, 16),
+							ZIndex = 5,
+							Font = Enum.Font.GothamBold,
+							Text = title,
+							TextColor3 = themes.TextColor,
+							TextSize = 14,
+							TextScaled = true,
+							TextXAlignment = Enum.TextXAlignment.Left
+						}), {
+							utility:Create("TextLabel", { -- title
+								Name = "Version",
+								AnchorPoint = Vector2.new(0, 0.5),
+								BackgroundTransparency = 1,
+								Position = UDim2.new(0, 78, 0.5, 0),
+								Size = UDim2.new(0.67, -24, 0, 16),
+								ZIndex = 5,
+								Font = Enum.Font.GothamBold,
+								Text = title,
+								TextColor3 = themes.TextColor,
+								TextSize = 14,
+								TextScaled = true,
+								TextXAlignment = Enum.TextXAlignment.Left
+							}), {
+								utility:Create("TextLabel", { -- title
+									Name = "Game",
+									AnchorPoint = Vector2.new(0, 0.5),
+									BackgroundTransparency = 1,
+									Position = UDim2.new(0, 78, 1, 0),
+									Size = UDim2.new(0.67, -24, 0, 16),
+									ZIndex = 5,
+									Font = Enum.Font.GothamBold,
+									Text = title,
+									TextColor3 = Color3.fromRGB(159, 159, 159),
+									TextSize = 14,
+									TextScaled = true,
+									TextXAlignment = Enum.TextXAlignment.Left
+								}, {
+									utility:Create("UIGradient", { -- title
+										Color = ColorSequence.new({
+											ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 0, 0)),
+											ColorSequenceKeypoint.new(0.145, Color3.fromRGB(255, 127, 0)),
+											ColorSequenceKeypoint.new(0.288, Color3.fromRGB(255, 255, 0)),
+											ColorSequenceKeypoint.new(0.429, Color3.fromRGB(0, 255, 0)),
+											ColorSequenceKeypoint.new(0.571, Color3.fromRGB(0, 255, 255)),
+											ColorSequenceKeypoint.new(0.715, Color3.fromRGB(0, 0, 255)),
+											ColorSequenceKeypoint.new(0.857, Color3.fromRGB(255, 0, 255)),
+											ColorSequenceKeypoint.new(1, Color3.fromRGB(255, 0, 0))
+										})
+									})
+								})
+							}
+						}
+					}
 				})
 			})
 		})
