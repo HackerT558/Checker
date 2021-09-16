@@ -14,11 +14,11 @@ local utility = {}
 -- themes
 local objects = {}
 local themes = {
-	Background = Color3.fromRGB(24, 24, 24), 
-	Glow = Color3.fromRGB(0, 0, 0), 
+	Background = Color3.fromRGB(66, 66, 66), 
+	Glow = Color3.fromRGB(255, 255, 255), 
 	Accent = Color3.fromRGB(10, 10, 10), 
-	LightContrast = Color3.fromRGB(20, 20, 20), 
-	DarkContrast = Color3.fromRGB(14, 14, 14),  
+	LightContrast = Color3.fromRGB(44, 44, 44), 
+	DarkContrast = Color3.fromRGB(24, 24, 24),  
 	TextColor = Color3.fromRGB(255, 255, 255)
 }
 
@@ -369,7 +369,7 @@ do
 				AnchorPoint = Vector2.new(0, 0.5),
 				BackgroundTransparency = 1,
 				Position = UDim2.new(0, 40, 0.5, 0),
-				Size = UDim2.new(0, 76, 1, 0),
+				Size = UDim2.new(0, 150, 1, 0),
 				ZIndex = 3,
 				Font = Enum.Font.Gotham,
 				Text = title,
@@ -398,8 +398,8 @@ do
 			Active = true,
 			BackgroundTransparency = 1,
 			BorderSizePixel = 0,
-			Position = UDim2.new(0, 134, 0, 46),
-			Size = UDim2.new(1, -142, 1, -56),
+			Position = UDim2.new(0, 212, 0, 11),
+			Size = UDim2.new(1, -222, 1, -20),
 			CanvasSize = UDim2.new(0, 0, 0, 466),
 			ScrollBarThickness = 3,
 			ScrollBarImageColor3 = themes.DarkContrast,
