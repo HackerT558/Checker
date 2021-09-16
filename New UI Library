@@ -234,8 +234,7 @@ do
 					ImageColor3 = themes.Glow,
 					ScaleType = Enum.ScaleType.Slice,
 					SliceCenter = Rect.new(24, 24, 276, 276)
-				})
-			}, {
+				}),
 				utility:Create("ImageLabel", {
 					Name = "Pages",
 					BackgroundTransparency = 1,
